@@ -34,6 +34,14 @@ public class List {
 
 //      g.*Удалить каждый второй элемент списка используя listIterator
         ListIterator<String> listIterator = list2.listIterator();
+//        The first variant or case
+//        while (listIterator.hasNext()) {
+//            listIterator.next();
+//            listIterator.next();
+//            listIterator.remove();
+//        }
+
+//      And the second variant
         for (int i = 0; i < list2.size(); i++) {
             listIterator.next();
             listIterator.next();
